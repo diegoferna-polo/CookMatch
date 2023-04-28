@@ -29,7 +29,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function MenuNavigation() {
   return (
-    <Disclosure as="nav" className="bg-menu absolute t-0 w-full">
+    <Disclosure as="nav" className="bg-bluegray-900 absolute t-0 w-full">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -50,8 +50,8 @@ export default function MenuNavigation() {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? 'bg-gray-900 text-gray-light'
-                                : 'text-gray-light hover:bg-gray-700 hover:text-white',
+                                ? 'bg-gray-900 text-bluegray-100 hover:bg-bluegray-800'
+                                : 'text-bluegray-100 hover:bg-gray-700 hover:bg-bluegray-800',
                               'rounded-md px-3 py-2 text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -69,7 +69,7 @@ export default function MenuNavigation() {
                         className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
                         <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6 text-gray-light" aria-hidden="true" />
+                        <BellIcon className="h-6 w-6 text-bluegray-100" aria-hidden="true" />
                       </button>
 
                       <Menu as="div" className="relative ml-3">

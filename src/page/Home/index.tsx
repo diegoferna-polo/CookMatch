@@ -18,8 +18,8 @@ function Home() {
       <main className='w-full !h-[calc(100vh-128px-80px)]  flex flex-col items-center justify-center absolute top-36'>
       <div className="w-2/3 max-w-7xl py-6 sm:px-6 lg:px-8 ">
           <div className='mb-4'>
-            <span className='font-sans text-6xl text-orange font-bold '>Cook</span>
-            <span className='font-sans text-6xl text-green font-bold'>Match</span>
+            <span className='font-sans text-6xl text-orange-500 font-bold '>Cook</span>
+            <span className='font-sans text-6xl text-green-500 font-bold'>Match</span>
 
           </div>
           <form  onSubmit={handleSearch}>   
